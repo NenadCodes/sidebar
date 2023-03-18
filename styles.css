@@ -1,0 +1,56 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+
+/*Global Styles*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Some Styling */
+h1{
+    text-align: center;
+}
+.nav-list {
+    list-style: none;
+}
+.nav-list > a {
+    text-decoration: none;
+    color:lightblue;
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.close-btn{
+float:right;
+width:2rem;
+height:2rem;
+margin:2rem;
+}
+
+.sidebar-toggle{
+    float:right;
+    width:2rem;
+    height:2rem;
+    margin:2rem;
+}
+
+.sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap:1rem;
+    box-shadow:black;
+    transform: translate(-100%);
+}
+
+.show-sidebar {
+    transform: translate(0);
+}
